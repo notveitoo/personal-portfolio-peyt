@@ -1,197 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Sharmaine Faith F. Vargas</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
-    <div class="noise"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Porfolio</title>
+    <meta name="description" content="Portfolio Template for Developer" />
 
-    <nav class="floating-nav">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link nav-cta">Hire Me</a>
-    </nav>
+    <link rel="stylesheet" href="style.css" />
 
-    <header id="home" class="hero reveal">
-        <div class="hero-content">
-            <div class="status-pill">● Registered Electrical Engineer</div>
-            <h1 class="hero-title">Sharmaine Faith <span class="cyan-gradient">Vargas</span></h1>
-            <p class="hero-subtext">Solar Pre-sales Design Specialist | Electrical Engineer.</p>
-            <p class="hero-subtext">Alumna of Technological University of the Philippines – Taguig.</p>
-            <div class="hero-btns">
-                <a href="#experience" class="cta-btn">View Experience</a>
-                <div class="social-icons-row">
-                    <a href="https://www.linkedin.com/in/sharmaine-faith-vargas-3b49b0240/" target="_blank"><i data-lucide="linkedin"></i></a>
-                    <a href="https://www.facebook.com/AtePeyt/" target="_blank"><i data-lucide="facebook"></i></a>
-                    <a href="https://www.instagram.com/mainefthvrgs/" target="_blank"><i data-lucide="instagram"></i></a>
-                </div>
-            </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/formal.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"/>
+          </div>
+          <span class="header__logo-sub">Sharmaine Faith F. Vargas</span>
         </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>            
+            <li class="header__link-wrapper">
+              <a href="./index.html#experience" class="header__link"> Experiences </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"/>
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"/>
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#experience"> Experiences </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-
-    <section id="about" class="container reveal">
-        <h2 class="section-label">01 // Profile</h2>
-            <div class="bento-grid">
-                <div class="bento-card large bio-card">
-                    <h3>Get to know me!</h3>
-                    <p class="bio-intro">I'm a <strong>Registered Electrical Engineer</strong> with a year of professional experience in designing and implementing solar energy solutions for residential systems.</p>
-                    
-                    <div class="bio-details">
-                        <div class="bio-item">
-                            <i data-lucide="sun"></i>
-                            <p>Currently a Solar Pre-sales Design Specialist at <strong>EMPWR Solar</strong>, specializing in permit-ready PV proposals and LIDAR analysis.</p>
-                        </div>
-                        <div class="bio-item">
-                            <i data-lucide="zap"></i>
-                            <p>Expertise in system optimization, production modeling, and ensuring NEC/AHJ compliance.</p>
-                        </div>
-                        <div class="bio-item">
-                            <i data-lucide="trending-up"></i>
-                            <p>Highly analytical problem-solver committed to sustainable energy and continuous technical growth.</p>
-                        </div>
-                    </div>
-                </div>
-
-            <div class="bento-card full-width">
-                <h3>Technical Arsenal</h3>
-                <div class="skills-flex">
-                    <div class="skill-group">
-                        <h4>Solar & CAD</h4>
-                        <span>Aurora Solar</span> <span>Everbright</span> <span>ENERFLO</span> <span>AHJ/NEC</span> <span>AutoCAD (2D/3D)</span>
-                    </div>
-                    <div class="skill-group">
-                        <h4>Engineering Skills</h4>
-                        <span>Electrical Circuit Designs</span> <span>Electrical Circuit Analysis</span>
-                    </div>
-                    <div class="skill-group">
-                        <h4>Productivity Tools</h4>
-                        <span>MS Office Suite</span> <span>Google Workspace</span> <span>Canva</span>
-                    </div>
-                </div>
-            </div>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hello, My name is Sharmaine Faith F. Vargas</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+           I am a Registered Electrical Engineer, graduated from Technological University of the Philippines – Taguig. I am currently working as a Solar Pre-sales Design Specialist. Please take a look at my portfolio.</p>
         </div>
+        <div class="home-hero__cta">
+          <!---->
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <div class="home-hero__social">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sharmaine-faith-vargas-3b49b0240/" class="home-hero__social-icon-link">
+              <img src="./assets/png/linkedin-ico.png" alt="LinkedIn Profile" class="home-hero__social-icon" />
+            </a>
+          </div>
+          
+          <div class="home-hero__social">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/AtePeyt/" class="home-hero__social-icon-link">
+              <img src="./assets/png/facebook-ico.png" alt="Facebook Profile" class="home-hero__social-icon" />
+            </a>
+          </div>
+          
+          <div class="home-hero__social">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/mainefthvrgs/" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
+              <img src="./assets/png/insta-ico.png" alt="Instagram Profile" class="home-hero__social-icon" />
+            </a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
     </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! It's <strong>Sharmaine Faith F. Vargas</strong>, a <strong>Registered Electrical Engineer</strong> with a year of professional experience in designing and implementing solar energy solutions, including system optimization and proposal development for residential clients. I previously worked as a Customer Service Representative at IBEX Global, where I developed strong communication, technical support, and client management skills in a fast-paced environment. I'm currently working as a Solar Pre-sales Design Specialist at EMPWR Solar based in the USA.
+                <br><br>
+                Highly analytical with strong problem-solving abilities, I am adaptable to dynamic work environments and committed to continuous learning.
+              </p>
 
-    <section id="experience" class="container reveal">
-        <h2 class="section-label">02 // Experience</h2>
-        <div class="experience-stack">
-            <div class="exp-card">
-                <div class="exp-header">
-                    <div>
-                        <h3>Solar Pre-sales Design Specialist (Remote)</h3>
-                        <p class="cyan-text">EMPWR Solar - US Based</p>
-                    </div>
-                    <span class="date-tag">June 2025 — Present</span>
-                </div>
-                <ul class="clean-list">
-                    <li>Engineered permit-ready residential PV proposals using Aurora Solar and LIDAR-based shade analysis.</li>
-                    <li>Performed production modeling and precise system sizing ensuring AHJ and NEC compliance.</li>
-                    <li>Trained and guided new hires for rapid proficiency in tools, workflows, and procedures.</li>
-                    <li>Reviewed and validated design proposals to maintain high-quality, zero-error performance.</li>
-                </ul>
+              <p class="about__content-details-para">
+                Feel free to
+                <strong>contact</strong> me here.
+              </p>
             </div>
-            
-            <div class="exp-card">
-                <div class="exp-header">
-                    <div>
-                        <h3>Solar Proposal Designer (Hybrid)</h3>
-                        <p class="cyan-text">SolutionCX — San Pedro, Laguna</p>
-                    </div>
-                    <span class="date-tag">March 2024 — January 2025</span>
-                </div>
-                <ul class="clean-list">
-                    <li>Developed customized solar energy system proposals including pricing and financing options.</li>
-                    <li>Ensured all proposals were accurate and compliant with industry regulations and standards.</li>
-                    <li>Collaborated with sales and business development teams to address specific client requirements.</li>
-                </ul>
+            <a href="./index.html#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">Solar Designs(Aurora Solar, Everbright, ENERFLO, AHJ)</div>
+              <div class="skills__skill">AutoCAD (2D, 3D)</div>
+              <div class="skills__skill">Canva</div>
+              <div class="skills__skill">MS Office Suite (Word, Excel, Powerpoint), Google Workspace and other productivity tools</div>
+              <div class="skills__skill">Programming Language (PYTHON, MATLAB, C/C++)</div>
+              <div class="skills__skill">Basic troubleshooting in hardware, software and networking issues</div>
             </div>
-
-            <div class="exp-card">
-                <div class="exp-header">
-                    <div>
-                        <h3>Customer Service Representative (Hybrid)</h3>
-                        <p class="cyan-text">IBEX Global</p>
-                    </div>
-                    <span class="date-tag">August 2022 — March 2023</span>
-                </div>
-                <ul class="clean-list">
-                    <li>Resolved technical inquiries and addressed customer complaints through live chat and phone support.</li>
-                    <li>Maintained accurate records of customer interactions to identify trends for process improvements.</li>
-                    <li>Developed strong communication and technical support skills in a fast-paced environment.</li>
-                </ul>
-            </div>
+          </div>
         </div>
+      </div>
+    </section> <!---->
+
+<section id="experience" class="exp sec-pad">
+  <div class="main-container">
+    <h2 class="heading heading-sec heading-sec__mb-bg">
+      <span class="heading-sec__main">Experience/s</span>
+    </h2>
+
+    <div class="exp__content">
+      <!-- Experience 1 -->
+      <div class="exp__card">
+        <div class="exp__header">
+          <div>
+            <h3 class="exp__position">Solar Pre-sales Design Specialist (Remote)</h3>
+            <p class="exp__company">EMPWR Solar - US Based</p>
+          </div>
+          <span class="exp__duration">June 2025 - Present</span>
+        </div>
+
+        <ul class="exp__responsibilities">
+          <li>• Engineered permit-ready residential roof- and ground-mounted PV proposals using Aurora Solar, performing LIDAR-based shade analysis, production modeling, and precise system sizing while ensuring compliance with AHJ and NEC requirements.</li>
+          <li>• Resolved customer change requests and escalated complex issues, ensuring client satisfaction.</li>
+          <li>• Reviewed and validated design proposals to maintain quality and prevent errors.</li>
+          <li>• Maintained detailed records to identify trends and drive process improvements.</li>
+          <li>• Provided support across pre- and post-sales operations, ensuring seamless service delivery.</li>
+          <li>• Delivered technical support and collaborated with teams to meet client requirements and project goals.</li>
+          <li>• Trained and guided new hires for rapid proficiency in tools, workflows, and procedures.</li>
+        </ul>
+      </div>
+
+
+      <!-- Experience 2 -->
+      <div class="exp__card">
+        <div class="exp__header">
+          <div>
+            <h3 class="exp__position">Solar Proposal Designer (Hybrid)</h3>
+            <p class="exp__company">SolutionCX — San Pedro, Laguna</p>
+          </div>
+          <span class="exp__duration">March 2024 - January 2025</span>
+        </div>
+
+        <ul class="exp__responsibilities">
+          <li>• Develop detailed and customized solar energy system proposals for clients, considering factors such as system size, components, pricing, and financing options.</li>
+          <li>• Ensure proposals are accurate, comprehensive, and compliant with industry regulations and standards.</li>
+          <li>• Provide technical support to the sales and project management teams throughout the proposal and project execution stages.</li>
+          <li>• Collaborate with sales and business development teams to gather client requirements and address their inquiries.</li>
+        </ul>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="exp__card">
+        <div class="exp__header">
+          <div>
+            <h3 class="exp__position">Customer Service Representative (Hybrid)</h3>
+            <p class="exp__company">IBEX Global</p>
+          </div>
+          <span class="exp__duration">August 2022 - March 2023 </span>
+        </div>
+
+        <ul class="exp__responsibilities">
+          <li>• Handled customer inquiries and resolved issues through live chat and phone support, ensuring efficient and positive customer experiences.</li>
+          <li>• Investigated and addressed customer complaints in accordance with established procedures, escalating complex cases to the appropriate departments when necessary.</li>
+          <li>• Maintained accurate and detailed records of customer interactions and transactions, identifying recurring issues to support process and service improvements.</li>
+          <li>• Adhered to company communication standards and service protocols while actively participating in training sessions and team meetings.</li>
+          </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="https://formsubmit.co/vsharmainefaith@gmail.com" method="POST" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
-
-    <section id="projects" class="container reveal">
-        <h2 class="section-label">03 // Projects</h2>
-        
-        <div class="project-stack">
-            <div class="bento-card full-width project-detail-card">
-                <div class="proj-text">
-                    <h3 class="cyan-text">Solar Design Portfolio</h3>
-                    <p class="description">A collection of permit-ready residential PV designs and LIDAR-based production models. (Replace this with your specific project links later).</p>
-                    <a href="#" class="github-link">View Project</a>
-                </div>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vener-servito/">
+                <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="LinkedIn">
+              </a>
+              
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/AtePeyt/">
+                <img class="main-footer__icon" src="./assets/png/facebook-ico.png" alt="Facebook">
+              </a>
+              
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/mainefthvrgs/">
+                <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="Instagram">
+              </a>
             </div>
-
-            <div class="bento-card full-width project-detail-card">
-                <h3 class="cyan-text">Engineering Projects</h3>
-                <p class="description">
-                    Technical projects involving <strong>MATLAB</strong> and <strong>Electrical System Analysis</strong> conducted during my tenure at TUP-Taguig.
-                </p>
-                <div class="tool-list">
-                    <h4>Technologies Used:</h4>
-                    <div class="skill-tags">
-                        <span>MATLAB</span> <span>AutoCAD</span> <span>System Analysis</span>
-                    </div>
-                </div>
-                <a href="#" class="github-link">
-                    <i data-lucide="link"></i> Case Study Link
-                </a>
-            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Sharmaine Faith F. Vargas</h4>
+            <p class="main-footer__short-desc">I created this for my portfolio and purposes only.
+            </p>
+          </div>
         </div>
-    </section>
 
-    <section id="contact" class="container reveal">
-        <div class="contact-bento">
-            <h2>Let's build something <span class="cyan-gradient">impactful.</span></h2>
-            <form action="https://formsubmit.co/vsharmainefaith@gmail.com" method="POST" class="modern-form">
-                <div class="form-row">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                </div>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="cta-btn">Send Email</button>
-            </form>
+        <div class="main-footer__lower">
+          &copy; 2026. Made by
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/mainefthvrgs/" title="Follow me on Instagram"> Sharmaine Faith F. Vargas</a>
         </div>
-    </section>
-
-    <footer>
-        <div class="social-icons-row" style="justify-content: center; margin-bottom: 20px;">
-            <a href="https://www.linkedin.com/in/sharmaine-faith-vargas-3b49b0240/" target="_blank"><i data-lucide="linkedin"></i></a>
-            <a href="https://www.facebook.com/AtePeyt/" target="_blank"><i data-lucide="facebook"></i></a>
-            <a href="https://www.instagram.com/mainefthvrgs/" target="_blank"><i data-lucide="instagram"></i></a>
-        </div>
-        <p>© 2026 Sharmaine Faith F. Vargas. Engineered for Excellence.</p>
+      </div>
     </footer>
-    
-    <script>
-        lucide.createIcons();
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('active');
-            });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html> 
+
+    <script src="./index.js"></script>
+  </body>
+</html>
