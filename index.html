@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Sharmaine Faith F. Vargas</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="./assets/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="./assets/png/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -199,59 +199,6 @@
         <p>© 2026 Sharmaine Faith F. Vargas. Engineered for Excellence.</p>
     </footer>
     
-    <script>
-        lucide.createIcons();
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('active');
-            });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-
-        let currentPDF = 1;
-        const totalPDFs = 3;
-
-        function changePDF(direction) {
-            // 1. Update the current index
-            currentPDF += direction;
-            
-            // 2. Handle Looping
-            if (currentPDF > totalPDFs) currentPDF = 1;
-            if (currentPDF < 1) currentPDF = totalPDFs;
-
-            // 3. Define the new file path
-            const fileName = `Aurora Shade Report ${currentPDF}.pdf`;
-            
-            // 4. Update the PDF Viewer (Object)
-            const viewer = document.getElementById('pdf-viewer');
-            if (viewer) {
-                viewer.setAttribute('data', fileName);
-            }
-
-            // 5. Update the Counter (This fixes your issue)
-            const counter = document.getElementById('pdf-counter');
-            if (counter) {
-                counter.innerText = `${currentPDF} / ${totalPDFs}`;
-            }
-
-            // 6. Update the Title
-            const title = document.getElementById('pdf-title');
-            if (title) {
-                title.innerText = `Aurora Shade Report ${currentPDF}`;
-            }
-
-            // 7. Update the Links (Fallback and Full Screen)
-            const fallback = document.getElementById('pdf-fallback');
-            const fullLink = document.getElementById('pdf-link');
-            if (fallback) fallback.setAttribute('href', fileName);
-            if (fullLink) fullLink.setAttribute('href', fileName);
-
-            // 8. Refresh Lucide Icons (to keep button icons visible)
-            if (window.lucide) {
-                lucide.createIcons();
-            }
-        }
-    </script>
+    <script src="./js/functions.js"></script>
 </body>
 </html> 
